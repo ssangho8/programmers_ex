@@ -1,0 +1,14 @@
+def solution(s):
+    answer = ''
+    sep = s.split(" ")
+    for i in range (len(sep)):
+        for j in range(len(sep[i])):
+            if j % 2 == 0:
+                answer = answer + sep[i][j].upper()
+            else:
+                answer = answer + sep[i][j].lower()
+        if i < len(sep)-1:
+            answer += " "
+        else: 
+            answer += ""
+    return answer

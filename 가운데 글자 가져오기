@@ -1,0 +1,11 @@
+def solution(s):
+    answer = ''
+    n = len(s)
+    sl = int((n-1)/2)
+    
+    if n % 2 == 1:
+        answer = s[sl:sl+1]
+        return answer
+    else:
+        answer = s[sl:sl+2]
+        return answer

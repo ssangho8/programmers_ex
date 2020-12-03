@@ -1,0 +1,8 @@
+def solution(n):
+    num = list(str(n))
+    dsum = 0
+    
+    for i in range(len(num)):
+        dsum = dsum + int(num[i])
+        
+    return dsum

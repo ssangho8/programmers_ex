@@ -1,0 +1,13 @@
+def solution(phone_number):
+    answer = ''
+    result = ''
+    n = len(phone_number)
+    for i in range(n-4, n):
+        result = result + phone_number[i]
+        
+    for i in range (n):
+        if i <= n-5 :
+            answer += '*'
+        else:
+            answer += result[i-(n-4)]
+    return answer

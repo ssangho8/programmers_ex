@@ -1,0 +1,23 @@
+def solution(s, n):
+    answer = ''
+    st = list(s)
+
+    low = 'abcdefghijklmnopqrstuvwxyz'
+    up = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    for i in st:
+        if i in low: #소문자일때
+            fl = low.find(i) # 소문자 i 위치 fl
+            low_ind = fl + n
+            if low_ind >= 25:
+                low_ind = (low_ind % 25) - 1
+            answer = answer + (low[low_ind])
+        elif i in up: #대문자일때
+            fu = up.find(i) #대문자 i 위치 fu
+            up_ind = fu + n
+            if up_ind >= 25:
+                up_ind = (up_ind % 25) - 1
+            answer = answer + (up[up_ind])
+        else:
+            answer = answer + " "
+    return answer

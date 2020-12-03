@@ -1,0 +1,9 @@
+def solution(arr):
+    answer = 0
+    dsum = 0
+    
+    for i in range (len(arr)) :
+        dsum = dsum + arr[i]
+        
+    answer = dsum/len(arr)
+    return answer

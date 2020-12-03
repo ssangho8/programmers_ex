@@ -1,0 +1,7 @@
+import math
+def solution(n):
+    s = math.sqrt(n)
+    if s.is_integer() == True:
+        return (s+1)*(s+1)
+    else:
+        return -1

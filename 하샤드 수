@@ -1,0 +1,10 @@
+def solution(x):
+    answer = True
+    dsum = 0
+    lst = list(str(x))
+    for i in lst:
+        dsum += int(i)
+    if x % dsum == 0:
+        return answer
+    else:
+        return False

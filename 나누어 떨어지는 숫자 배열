@@ -1,0 +1,10 @@
+def solution(arr, divisor):
+    answer = []
+    emp = []
+    for i in arr:
+        if i % divisor == 0:
+            answer.append(i)
+    if answer == emp:
+        answer.append(-1)
+    answer.sort()
+    return answer
